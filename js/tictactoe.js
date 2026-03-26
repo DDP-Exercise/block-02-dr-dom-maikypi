@@ -20,7 +20,7 @@
 const X = "Savior (X)";
 const O = "Dr. DOM (O)";
 
-//Some of your epic battles:
+// Some of your epic battles:
 const BATTLEFIELD =
     [
         [O, X, O],
@@ -28,80 +28,43 @@ const BATTLEFIELD =
         [O, O, X],
     ];
 
-const BATTLEFIED =
-        [
-            [null, X, X],
-            [X, O, null],
-            [O, O, O],
-        ];
+// const BATTLEFIELD =
+// [
+//     [null, X, X],
+//     [X, O, null],
+//     [O, O, O],
+// ];
 
 // const BATTLEFIELD =
-//     [
-//         [null, X, X],
-//         [X, O, null],
-//         [O, O, O],
-//     ];
-
-const BATTLEFIELD=
-    [
-        [O, O, X],
-        [X, O, X],
-        [O, X, X],
-    ];
+// [
+//     [O, O, X],
+//     [X, O, X],
+//     [O, X, X],
+// ];
 
 // const BATTLEFIELD =
-//     [
-//         [O, O, X],
-//         [X, O, X],
-//         [O, X, X],
-//     ];
-const BATTLEFIELD =
-    [
-        [O, X, X],
-        [X, O, X],
-        [O, X, O],
-    ]
-
+// [
+//     [O, X, X],
+//     [X, O, X],
+//     [O, X, O],
+// ];
 
 // const BATTLEFIELD =
-//     [
-//         [O, X, X],
-//         [X, O, X],
-//         [O, X, O],
-//     ];
-//
-const BATTLEFIELD=
-    [
-        [O, X, X, X],
-        [X, O, X, O],
-        [O, X, O, X],
-        [X, O, X, X],
-    ]
-// const BATTLEFIELD =
-//     [
-//         [O, X, X, X],
-//         [X, O, X, O],
-//         [O, X, O, X],
-//         [X, O, X, X],
-//     ];
-const BATTLEFIELD =
-    [
-        [O, X, X, X, null],
-        [X, O, X, O, O],
-        [O, X, O, null, X],
-        [X, null, X, O, O],
-        [X, null, O, X, O],
-    ];
-// const BATTLEFIELD =
-//     [
-//         [O, X, X, X, null],
-//         [X, O, X, O, O],
-//         [O, X, O, null,  X],
-//         [X, null, X, O, O],
-//         [X, null, O, X, O],
-//     ];
+// [
+//     [O, X, X, X],
+//     [X, O, X, O],
+//     [O, X, O, X],
+//     [X, O, X, X],
+// ];
 
-//TODO: Check if the battle is over, and if so, announce the winner!
+// const BATTLEFIELD =
+// [
+//     [O, X, X, X, null],
+//     [X, O, X, O, O],
+//     [O, X, O, null, X],
+//     [X, null, X, O, O],
+//     [X, null, O, X, O],
+// ];
 
 let winner = null;
 let winType = "";
