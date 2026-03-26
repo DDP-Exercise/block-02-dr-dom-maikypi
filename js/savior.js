@@ -18,7 +18,7 @@
  *     is watching. We have to do it the right way.
  *     The JavaScript way!
  *
- *     Bratlsoft - 2026-03-15
+ *     maikypi - 2026-03-26
  *******************************************************/
 
 /**
@@ -27,7 +27,8 @@
  * without the risk of catching an eye infection!
  */
 
-
+document.body.style.color= "black";
+document.body.style.backgroundColor= "white";
 
 
 /**
@@ -36,7 +37,9 @@
  * Can't we just remove them all together?
  */
 
-
+const minions = document.querySelectorAll(".minion");
+for (const minion of minions) {
+    minion.remove();
 
 
 /**
@@ -45,7 +48,10 @@
  * And while at it, let the world know again, that they are back in town!
  */
 
-
+const heroes = document.querySelectorAll(".hero");
+    for (const hero of heroes) {
+        hero.style.display = "block";
+    }
 
 /**
  * TODO 4:
@@ -53,7 +59,9 @@
  * Do your thing, savior!
  */
 
-
+const message = document.querySelector("#status");
+    message.textContent = "Our heroes are back!";
+    }
 
 /**
  * TODO 5:
@@ -63,3 +71,5 @@
  * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
  * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
  */
+const headline = document.querySelector("h1");
+headline.textContent = "Our Heroes Are Back!";
