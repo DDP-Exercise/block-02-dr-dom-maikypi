@@ -42,34 +42,33 @@ for (const minion of minions) {
     minion.remove();
 
 
-/**
- * TODO 3:
- * Wow! You are so powerful! Quick now, set our heroes of the web free!
- * And while at it, let the world know again, that they are back in town!
- */
+    /**
+     * TODO 3:
+     * Wow! You are so powerful! Quick now, set our heroes of the web free!
+     * And while at it, let the world know again, that they are back in town!
+     */
 
-const heroes = document.querySelectorAll(".hero");
+    const heroes = document.querySelectorAll(".hero");
     for (const hero of heroes) {
         hero.style.display = "block";
     }
 
-/**
- * TODO 4:
- * Our Webpage is safe again! But Dr. Dom is still holding our Headline as a hostage!
- * Do your thing, savior!
- */
+    /**
+     * TODO 4:
+     * Our Webpage is safe again! But Dr. Dom is still holding our Headline as a hostage!
+     * Do your thing, savior!
+     */
 
-const message = document.querySelector("#status");
+    const message = document.querySelector("#message");
     message.textContent = "Our heroes are back!";
-    }
-
-/**
- * TODO 5:
- * You saved the day, again! I knew I could count on you. Our Website is restored,
- * our heroes are freed and there is no sign, Dr. DOM has ever done his evil.
- *
- * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
- * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
- */
-const headline = document.querySelector("h1");
-headline.textContent = "Our Heroes Are Back!";
+    /**
+     * TODO 5:
+     * You saved the day, again! I knew I could count on you. Our Website is restored,
+     * our heroes are freed and there is no sign, Dr. DOM has ever done his evil.
+     *
+     * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
+     * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
+     */
+    const pageHeadline = document.querySelector("#title");
+    pageHeadline.textContent = "Our Heroes Are Back!";
+}
