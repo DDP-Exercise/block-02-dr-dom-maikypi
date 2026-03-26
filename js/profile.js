@@ -20,12 +20,12 @@ const SAVIOR = {
     name: "Michaela",
     age: 32,
     location: "San Francisco",
-    hobbies: ["Zeichnen", "Lesen", "Schwimmen"],
-    type_of_companion: "Katze",
+    hobbies: ["reading", "climbing", "swimming"],
+    type_of_companion: "cat",
     companion: {
         name: "Mimi",
         age: 3,
-        color: "grau"
+        color: "grey"
     }
 };
 
