@@ -27,8 +27,11 @@
  * without the risk of catching an eye infection!
  */
 
-document.body.style.color= "black";
-document.body.style.backgroundColor= "lightgray";
+const paragraphs = document.getElementsByTagName("p");
+for (const paragraph of paragraphs) {
+    paragraph.style.color = "black";
+    paragraph.style.backgroundColor = "transparent";
+}
 
 
 /**
@@ -37,10 +40,14 @@ document.body.style.backgroundColor= "lightgray";
  * Can't we just remove them all together?
  */
 
-const minions = document.querySelectorAll(".minion");
-for (const minion of minions) {
-    minion.remove();
+const lists = document.getElementsByTagName("ul");
+const originalHeroesList = document.getElementById("heroes_of_the_web");
 
+for (const list of [...lists]) {
+    if (list !== originalHeroesList) {
+        list.remove();
+    }
+}
 
     /**
      * TODO 3:
@@ -48,10 +55,10 @@ for (const minion of minions) {
      * And while at it, let the world know again, that they are back in town!
      */
 
-    const heroes = document.querySelectorAll(".hero");
-    for (const hero of heroes) {
-        hero.style.display = "block";
-    }
+originalHeroesList.style.visibility = "visible";
+originalHeroesList.previousElementSibling.textContent =
+    "Let us introduce to you our list of Web-Heroes:";
+
 
     /**
      * TODO 4:
@@ -59,8 +66,10 @@ for (const minion of minions) {
      * Do your thing, savior!
      */
 
-    const message = document.querySelector("#message");
-    message.textContent = "Our heroes are back!";
+document.getElementById("title").textContent =
+    "We, the mighty Heroes of the web, will protect you!";
+document.getElementById("message").textContent =
+    "We care for simplistic design!";
     /**
      * TODO 5:
      * You saved the day, again! I knew I could count on you. Our Website is restored,
@@ -69,6 +78,11 @@ for (const minion of minions) {
      * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
      * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
      */
-    const pageHeadline = document.querySelector("#title");
-    pageHeadline.textContent = "Our Heroes Are Back!";
+
+    const scripts = document.getElementsByTagName("script");
+
+for (const script of [...scripts]) {
+    if (script.getAttribute("src") === "js/dr.dom.js") {
+        script.remove();
+    }
 }
