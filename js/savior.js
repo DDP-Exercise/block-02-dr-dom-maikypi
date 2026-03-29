@@ -28,7 +28,7 @@
  */
 
 document.body.style.color= "black";
-document.body.style.backgroundColor= "white";
+document.body.style.backgroundColor= "lightgray";
 
 
 /**
