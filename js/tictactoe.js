@@ -19,7 +19,7 @@
 
 const X = "Savior (X)";
 const O = "Dr. DOM (O)";
-te
+
 // Some of your epic battles:
 const BATTLEFIELD =
     [
