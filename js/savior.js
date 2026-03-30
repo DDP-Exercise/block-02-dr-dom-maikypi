@@ -40,9 +40,11 @@ for (const paragraph of paragraphs) {
  * Can't we just remove them all together?
  */
 
-const minions = document.querySelectorAll(".minion");
-for (const minion of minions) {
-    minion.remove();
+const heroesList = document.getElementById("heroes_of_the_web");
+const minionList = heroesList.previousElementSibling;
+
+if (minionList && minionList.tagName === "UL") {
+    minionList.remove();
 }
 
 
@@ -53,7 +55,7 @@ for (const minion of minions) {
  */
 
 const originalHeroesList = document.getElementById("heroes_of_the_web");
-originalHeroesList.style.display = "";
+originalHeroesList.style.visibility = "visible";
 
 /**
  * TODO 4:
@@ -65,6 +67,8 @@ document.getElementById("title").textContent =
     "We, the mighty Heroes of the web, will protect you!";
 document.getElementById("message").textContent =
     "We care for simplistic design!";
+document.getElementById("message").nextElementSibling.textContent =
+    "Let us introduce to you our list of Web-Heroes:";
 
 /**
  * TODO 5:
