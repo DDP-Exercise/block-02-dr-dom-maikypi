@@ -40,46 +40,42 @@ for (const paragraph of paragraphs) {
  * Can't we just remove them all together?
  */
 
-const lists = document.getElementsByTagName("ul");
-const originalHeroesList = document.getElementById("heroes_of_the_web");
-
-for (const list of [...lists]) {
-    if (list !== originalHeroesList) {
-        list.remove();
-    }
+const minions = document.querySelectorAll(".minion");
+for (const minion of minions) {
+    minion.remove();
 }
 
-    /**
-     * TODO 3:
-     * Wow! You are so powerful! Quick now, set our heroes of the web free!
-     * And while at it, let the world know again, that they are back in town!
-     */
 
-originalHeroesList.style.visibility = "visible";
-originalHeroesList.previousElementSibling.textContent =
-    "Let us introduce to you our list of Web-Heroes:";
+/**
+ * TODO 3:
+ * Wow! You are so powerful! Quick now, set our heroes of the web free!
+ * And while at it, let the world know again, that they are back in town!
+ */
 
+const originalHeroesList = document.getElementById("heroes_of_the_web");
+originalHeroesList.style.display = "";
 
-    /**
-     * TODO 4:
-     * Our Webpage is safe again! But Dr. Dom is still holding our Headline as a hostage!
-     * Do your thing, savior!
-     */
+/**
+ * TODO 4:
+ * Our Webpage is safe again! But Dr. Dom is still holding our Headline as a hostage!
+ * Do your thing, savior!
+ */
 
 document.getElementById("title").textContent =
     "We, the mighty Heroes of the web, will protect you!";
 document.getElementById("message").textContent =
     "We care for simplistic design!";
-    /**
-     * TODO 5:
-     * You saved the day, again! I knew I could count on you. Our Website is restored,
-     * our heroes are freed and there is no sign, Dr. DOM has ever done his evil.
-     *
-     * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
-     * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
-     */
 
-    const scripts = document.getElementsByTagName("script");
+/**
+ * TODO 5:
+ * You saved the day, again! I knew I could count on you. Our Website is restored,
+ * our heroes are freed and there is no sign, Dr. DOM has ever done his evil.
+ *
+ * It might sound paranoid. But I can't get rid of the feeling, that he is still here,
+ * somewhere in the DOM. I can still feel his Code. Can you identify the source and remove it?
+ */
+
+const scripts = document.getElementsByTagName("script");
 
 for (const script of [...scripts]) {
     if (script.getAttribute("src") === "js/dr.dom.js") {
