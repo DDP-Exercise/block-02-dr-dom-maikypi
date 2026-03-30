@@ -27,7 +27,7 @@ const SAVIOR = {
         age: 3,
         color: "grey"
     }
-};
+}
 
 /*******************************************************
  *   DO NOT CHANGE THE CODE BELOW!
